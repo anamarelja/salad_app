@@ -7,16 +7,17 @@ const Salad = (props) => {
     return ( 
         <div className="Salad">
             <img src={props.salad.img} alt="salad_picture"/>
-            <p>{props.salad.name}</p>
-            <p>{props.salad.kcal}</p>
-            <div>
+            <p className="SaladTitle">{props.salad.name}</p>
+            <p className="SaladKCal">{props.salad.kcal} calories</p>
+            <p className="ingredients">Ingredients :</p>
+            <div className="ingredients"> 
                 {props.salad.ingredients.map((e)=>{
-                    return <div>{e}</div>
+                    return <div>{e} / </div>
                 })}
             </div>
-            <div>
+            <div className="SaladTags">
                 {props.salad.tags.map((e)=>{
-                    return <p>{e}</p>
+                    return <p className="Tag"><i> {e} </i></p>
                 })}
             </div>
         </div>
