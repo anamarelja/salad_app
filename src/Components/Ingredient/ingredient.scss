@@ -1,0 +1,37 @@
+.Ingredient {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0px 0px 8px -2px #f58220;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.01);
+    transition: all 500ms;
+  }
+  img {
+    height: 80px;
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .ingredientName {
+    width: 150px;
+    color: #f58220;
+  }
+  .ingredientKcal {
+    color: #7a7a7a;
+    width: 150px;
+  }
+  .ingredientTags {
+    color: #f58220;
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      padding: 5px 10px;
+      background-color: #ececec;
+      border-radius: 10px;
+    }
+  }
+}
