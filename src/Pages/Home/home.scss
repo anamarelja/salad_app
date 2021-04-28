@@ -2,4 +2,60 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.HomeHeader{
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2px solid lightgray;
+
+    .HeaderLogo{
+        font-size: 30px;
+        color: #f58220;
+        font-weight: bold;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        .fa-seedling{
+            color: #91b648;
+        }
+
+        input {
+            margin-left: 30px;
+            border-radius: 20px;
+            border: 1px solid #F58220;
+            padding: 10px;
+            outline: none;
+            color: #7A7A7A;  
+          }
+    }
+
+    .Links{
+        display: flex;
+        .Link{
+            text-decoration: none;
+            color: #91b648;
+            padding: 20px;
+            font-size: 18px;
+
+            &:hover{
+                color: #f58220;
+            }
+        }
+        .LinkSalad{
+            background-color: #91b648;
+            color: white;
+            border-radius: 10px;
+            &:hover{
+                color: white;
+            }
+        }
+    }
 }
